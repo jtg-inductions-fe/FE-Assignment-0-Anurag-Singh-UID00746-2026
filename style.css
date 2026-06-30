@@ -1,0 +1,472 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+main > img{
+
+    height: 200px;
+    width: 500px;
+    margin-top: 180px;
+
+}
+
+.share-wrapper{
+
+    width: 688px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -48px;
+    padding-right: 64px;
+    margin-bottom: 18px;
+
+}
+
+.share-button{
+
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #eeeff1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.share-button img{
+
+    width: 20px;
+    height: 20px;
+
+}
+
+#input{
+
+    height: 52px;
+    max-width: 688px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 14px;
+    border-radius: 50px;
+    border: 1px solid #dfe1e5;
+    box-shadow: 0px 1px 3px rgba(32, 33, 36, 0.28);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+
+    /* prevents children from forcing the bar wider than the device */
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+
+#input .icon{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 8px;
+
+}
+
+#input .icon:hover{
+
+    background-color: #eeeff1;
+    cursor: pointer;
+
+}
+
+#input input{
+
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+
+#input .actions{
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.icon-button{
+
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-right: 8px;
+
+}
+
+.icon-button img{
+
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+}
+
+.icon img,
+.share-button img{
+
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+
+}
+
+.ai-mode{
+
+    padding: 0 14px;
+    height: 36px;
+    border: none;
+    border-radius: 999px;
+    background: #eeeff1;
+    color: #202124;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 1 auto;
+    flex-shrink: 1;
+    min-width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: normal;
+    line-height: 1;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.ai-mode svg{
+
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+
+}
+
+.buttons{
+
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+
+}
+
+.buttons button{
+
+    padding: 0 20px;
+    margin-top: 10px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    background: #eeeff1;
+
+}
+
+.buttons button:hover{
+
+    border: 1px solid #dfe1e5;
+    box-shadow: 0px 1px 2px rgba(32, 33, 36, 0.28);
+
+}
+
+.language-links{
+
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    max-width: 700px;
+
+}
+
+.language-links a{
+
+    color: #1a0dab;
+    text-decoration: none;
+
+}
+
+.language-links a:hover{
+
+    text-decoration: underline;
+
+}
+
+footer{
+
+    margin-top: 40px;
+    background: #eeeff1;
+
+}
+
+hr{
+
+    width: 100%;
+    border: none;
+    border-top: 1px solid #c8c8cd;
+
+}
+
+.footer-top{
+
+    width: 100%;
+    font-size: 14px;
+
+}
+
+.footer-bottom{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px 18px 25px;
+    font-size: 14px;
+
+}
+
+#india{
+
+    margin: 18px 0px 18px 25px;
+
+}
+
+@media (max-width: 768px){
+
+    footer{
+
+        width: 100%;
+        /* overflow: hidden; */
+
+    }
+
+    main > img{
+
+        width: min(84vw, 500px);
+        height: auto;
+        margin-top: 56px;
+
+    }
+
+    .share-wrapper{
+
+        width: min(88vw, 688px);
+        padding-right: 0;
+        margin-top: -20px;
+        margin-bottom: 10px;
+
+    }
+
+    #input{
+
+        width: auto;
+        height: auto;
+        min-height: 48px;
+        padding: 0px 5px 0px 5px;
+        gap: 8px;
+
+    }
+
+    #input .icon,
+    #input .icon-button img,
+    .icon img,
+    .share-button img{
+
+        width: 22px;
+        height: 22px;
+
+    }
+
+    #input input{
+
+        font-size: 13px;
+
+    }
+
+    .actions{
+
+        gap: 4px;
+
+    }
+
+    .icon-button{
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .ai-mode{
+
+        height: 40px;
+        /* padding: 0 10px; */
+        font-size: 10px;
+        gap: 6px;
+        white-space: normal;
+        min-width: 0;
+
+    }
+
+
+}
+
+@media (max-width: 480px){
+
+    .ai-mode{
+
+        height: 38px;
+        padding: 0 8px;
+        font-size: 9.5px;
+        gap: 5px;
+        white-space: normal;
+        min-width: 0;
+    }
+
+
+    .ai-mode img{
+
+        width: 14px;
+        height: 14px;
+
+    }
+
+}
+
+@media (max-width: 360px){
+
+    .ai-mode{
+
+        height: 36px;
+        font-size: 9px;
+        gap: 4px;
+        white-space: normal;
+        min-width: 0;
+
+    }
+
+
+    .ai-mode img{
+
+        width: 8px;
+        height: 8px;
+
+    }
+
+    #input{
+
+        max-width: 90vw;
+        gap: auto;
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .buttons{
+
+        flex-direction: column;
+        width: min(88vw, 688px);
+        align-items: center;
+        margin-top: 18px;
+
+    }
+
+    .buttons button{
+
+        width: 100%;
+        max-width: 200px;
+        height: 34px;
+        margin-top: 8px;
+        font-size: 13px;
+
+    }
+
+    .language-links{
+
+        margin-top: 24px;
+        padding: 0 16px;
+        line-height: 1.7;
+        font-size: 11px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+    }
+
+}
+
+.footer-bottom a{
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.footer-bottom a:hover{
+
+    text-decoration: underline;
+
+}
+
+.contents{
+
+    display: flex;
+    gap: 20px;
+
+}
+
+
